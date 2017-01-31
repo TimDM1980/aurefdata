@@ -1,1 +1,14 @@
-hier moet iets komen gelijk redeliverytool zijne stubserver
+{
+  "name":"aurefdatastub",
+  "version":"1.0.0",
+  "main":"server.js",
+  "scripts": {
+    "start":"node server.js"
+  },
+  "author":"bktid",
+  "dependencies": {
+    "express":"^4.14.0",
+    "express-ws":"^2.0.0",
+    "lodash":"^4.17.2"
+  }
+}
