@@ -1,0 +1,18 @@
+<template>
+  <h1>${heading}</h1>
+
+  <form submit.trigger="zoeken()">
+    <label>KantoorCode</label>
+    <input type="text" value.bind="kantoorcode">
+    <button type="submit">Zoeken</button>
+  </form>
+
+  ${responsebody}
+
+  dit kan nooit werken in combinatie met LookupServlet.
+  We schrijven nl de zoekresultaten als attributes op de REQUEST weg.
+  de lookup.jsp heeft scriptlet tags die die request attributes uitlezen.
+  Hoe kan dit werken??? scriptlet tags werken SERVER SIDE, dus die kan daar aan.
+  Via JS kunnen we nooit meer aan dat request object aan, maw ik moet een REST gateway opzetten.
+
+</template>
